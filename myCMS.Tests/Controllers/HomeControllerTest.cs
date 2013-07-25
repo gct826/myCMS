@@ -23,7 +23,7 @@ namespace myCMS.Tests.Controllers
             var result = controller.Index() as ViewResult;
 
             // Assert
-            Assert.IsNotNull(result);
+            Assert.AreEqual("myCMS", result.ViewBag.Title);
         }
     }
 }

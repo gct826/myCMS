@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+        <title>@ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="description" content="myCMS - a simple to use CMS based on Liquid Gem template.">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Cookie' rel='stylesheet' type='text/css'>
+
+        @Styles.Render("~/Content/css")
+
+        @Scripts.Render("~/bundles/jquery")
+
+
+        @*        <script type="text/javascript" src="~/Scripts/jquery.carouFredSel-5.5.2.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.form.js"></script> 
+        <script type="text/javascript" src="~/Scripts/scripts.js"></script> *@
+
+    </head>
+    <body>
+        <div class="wrapper">
+
+        	<div id="top">
+                <div id="logo">
+                    <img id="logoimage" src="/Content/images/logo.png" alt="logo">	<!-- Logo image -->
+                    <h1 id="logotitle">liquid gem</h1>	<!-- Logo text -->
+                </div><!--/logo-->
+                <nav>	<!-- Navigation Start -->
+                    <ul>
+            	        <li><a href="#top">HOME</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>      
+                </nav>	<!-- Navigation End -->
+            </div><!--/top-->
+        
+        <header>	<!-- Header Title Start -->
+    	    <h1>Hello there, I'm <span>&quot;gct826&quot;</span>. Welcome to myCMS project!</h1>
+            <h2>&ndash; Web Developer Hobbyist &ndash;</h2>
+        </header>	<!-- Header Title End -->
+        <hr/><!-- Horizontal Line -->
+
+
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div> <!-- body -->
+            
+
+        <hr/><!-- Horizontal Line -->
+            <footer id="footer">
+	            <div class="wrapper">
+    	            <section class="left">
+    	            <h4>Contact</h4>
+                        <div id="formwrap">
+                            <form method="post" id="submitform" action="submitemail.php" >
+                                        <input type="text" class="formstyle" title="Name" name="name" />
+                                        <input type="text" class="formstyle" title="Email" name="email" />
+                                        <textarea name="message" title="Message"></textarea>
+                                        <input class="formstyletwo" type="submit" value="Send">  
+                            </form>
+                        </div>
+                        <div id="error"></div>
+                    </section>
+
+                <!-- DON'T TOUCH THIS SECTION END -->        
+        
+    	            <section class="right social"> <!-- Social Icons Start -->
+		            <a href="http://plus.google.co.uk"><img class="icon" src="/Content/images/icons/google.png" width="32" height="32" alt="google"></a><!-- Replace with any 32px x 32px icons -->
+                    <a href="http://youtube.com"><img class="icon" src="/Content/images/icons/youtube.png" width="32" height="32" alt="youtube"></a><!-- Replace with any 32px x 32px icons -->
+                    <a href="http://facebook.com"><img class="icon" src="/Content/images/icons/facebook.png" width="32" height="32" alt="facebook"></a><!-- Replace with any 32px x 32px icons -->
+                    <a href="http://twitter.com"><img class="icon" src="/Content/images/icons/twitter.png" width="32" height="32" alt="twitter"></a><!-- Replace with any 32px x 32px icons -->
+                    </section> <!-- Social Icons End -->
+                    <p>lets get social - </p>
+                    </section> <!-- Social Icons End -->
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+
+
+        </div>
+    </body>
+</html>

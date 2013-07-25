@@ -3,6 +3,8 @@ C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\myCMS.Tests.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\myCMS.Tests.pdb
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\MongoDB.Bson.dll
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\MongoDB.Driver.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\myCMS.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Net.Http.Formatting.dll
@@ -14,7 +16,12 @@ C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Web.Razor.dl
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Web.WebPages.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\WebGrease.dll
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\Antlr3.Runtime.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\myCMS.pdb
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\MongoDB.Bson.xml
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\MongoDB.Driver.xml
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Web.Helpers.xml

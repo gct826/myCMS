@@ -13,6 +13,8 @@ namespace myCMS.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.Title = "myCMS";
+
             return View();
         }
 

@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MongoDB.Bson">
       <HintPath>..\packages\mongocsharpdriver.1.8.1\lib\net35\MongoDB.Bson.dll</HintPath>
@@ -55,6 +58,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -112,8 +118,12 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -124,9 +134,52 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\images\backgroundtexture.png" />
+    <Content Include="Content\images\icons\facebook.png" />
+    <Content Include="Content\images\icons\google.png" />
+    <Content Include="Content\images\icons\twitter.png" />
+    <Content Include="Content\images\icons\youtube.png" />
+    <Content Include="Content\images\icons\_notes\dwsync.xml" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\slideshow\sliderimage1.jpg" />
+    <Content Include="Content\images\slideshow\sliderimage2.jpg" />
+    <Content Include="Content\images\slideshow\sliderimage3.jpg" />
+    <Content Include="Content\images\slideshow\_notes\dwsync.xml" />
+    <Content Include="Content\images\work\SkiesOfSpain\sky1.JPG" />
+    <Content Include="Content\images\work\SkiesOfSpain\sky2.JPG" />
+    <Content Include="Content\images\work\SkiesOfSpain\sky3.JPG" />
+    <Content Include="Content\images\work\SkiesOfSpain\_notes\dwsync.xml" />
+    <Content Include="Content\images\work\thumbs\item.png" />
+    <Content Include="Content\images\work\thumbs\item10.png" />
+    <Content Include="Content\images\work\thumbs\item2.png" />
+    <Content Include="Content\images\work\thumbs\item3.png" />
+    <Content Include="Content\images\work\thumbs\item4.png" />
+    <Content Include="Content\images\work\thumbs\item5.png" />
+    <Content Include="Content\images\work\thumbs\item6.png" />
+    <Content Include="Content\images\work\thumbs\item7.png" />
+    <Content Include="Content\images\work\thumbs\item8.png" />
+    <Content Include="Content\images\work\thumbs\item9.png" />
+    <Content Include="Content\images\work\thumbs\_notes\dwsync.xml" />
+    <Content Include="Content\images\work\_notes\dwsync.xml" />
+    <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-2.0.3-vsdoc.js" />
+    <Content Include="Scripts\jquery-2.0.3.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -145,6 +198,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\images\.DS_Store" />
+    <Content Include="Content\images\work\.DS_Store" />
+    <Content Include="Content\images\work\thumbs\.DS_Store" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
