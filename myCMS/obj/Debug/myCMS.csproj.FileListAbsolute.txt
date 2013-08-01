@@ -31,4 +31,6 @@ C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\System.Web.WebPages.Deployment.
 C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\System.Web.WebPages.Razor.xml
 C:\Users\George\Documents\GitHub\myCMS\myCMS\obj\Debug\myCMS.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS\obj\Debug\myCMS.pdb
-C:\Users\George\Documents\GitHub\myCMS\myCMS\obj\Debug\myCMS.csprojResolveAssemblyReference.cache
+C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\Ninject.dll
+C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\Ninject.pdb
+C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\Ninject.xml

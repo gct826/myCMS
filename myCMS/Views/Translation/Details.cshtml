@@ -1,0 +1,33 @@
+﻿@model myCMS.Models.Translation
+
+<h2>@ViewBag.Title</h2>
+
+<fieldset>
+    <legend>CMSPage</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+    
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsDefault)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsDefault)
+    </div>
+    
+</fieldset>
+<p>
+@*    @Html.ActionLink("Edit", "Edit", new { id=Model.CMSPageId }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>

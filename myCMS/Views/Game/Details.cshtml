@@ -1,0 +1,43 @@
+﻿@model myCMS.Models.Game
+
+<h2>@ViewBag.Title</h2>
+
+<fieldset>
+    <legend>CMSPage</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ReleaseDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ReleaseDate)
+    </div>
+    
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Played)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Played)
+    </div>
+    
+@*    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Categories)
+    </div>
+    <div class="display-field">
+        @foreach (var item in Model.Categories)
+        {
+            @item <br/>
+        }*@
+
+    </div>
+</fieldset>
+<p>
+@*    @Html.ActionLink("Edit", "Edit", new { id=Model.CMSPageId }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>

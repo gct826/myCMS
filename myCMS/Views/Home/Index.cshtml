@@ -1,1 +1,17 @@
 ﻿<h2>Welcome to myCMS Project.</h2>
+<br/>
+
+<p>Page Title = @ViewBag.Title</p>
+
+@if (ViewBag.Test != null)
+{
+    @ViewBag.Test
+}
+
+
+<br/>
+
+<ul><p>debug only</p></ul>
+<p>Language = @ViewBag.langRV</p>
+<p>Controller = @ViewBag.contRV</p>
+<p>Action = @ViewBag.actiRV</p>

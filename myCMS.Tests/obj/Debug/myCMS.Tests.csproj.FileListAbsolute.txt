@@ -35,3 +35,6 @@ C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\System.Web.WebPages
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\obj\Debug\myCMS.Tests.csprojResolveAssemblyReference.cache
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\obj\Debug\myCMS.Tests.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\obj\Debug\myCMS.Tests.pdb
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\Ninject.dll
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\Ninject.pdb
+C:\Users\George\Documents\GitHub\myCMS\myCMS.Tests\bin\Debug\Ninject.xml
