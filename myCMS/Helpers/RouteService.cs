@@ -10,28 +10,48 @@ namespace myCMS.Helpers
 
         public RouteValues GetRouteValues(ControllerContext controllerContext)
         {
+            var translation = new TranslationHelper();
+            var idRV = "";
+
+            try 
+            {
+                idRV = controllerContext.RouteData.Values["id"].ToString();
+            }
+            catch
+            {
+                idRV = "no id";
+            }
+
             if (controllerContext == null)
             {
-
-                var translation = new TranslationHelper();
-                var defaultTranslation = translation.DefaultTranslation();
-
-                //string defaultTranslation = "test";
-
                 return new RouteValues
                     {
-                        Language = defaultTranslation,
-                        //Language = "language",
+                        Language = translation.DefaultTranslation(),
                         Controller = "controller",
-                        Action = "action"
+                        Action = "action",
+                        Id = idRV
                     };
             }
+
+            if (!translation.ValidTranslation(controllerContext.RouteData.Values["language"].ToString()))
+            {
+                return new RouteValues
+                    {
+                        Language = "error",
+                        Controller = controllerContext.RouteData.Values["controller"].ToString(),
+                        Action = controllerContext.RouteData.Values["action"].ToString(),
+                        Id = idRV
+                    };
+            }
+
             return new RouteValues
                 {
                     Language = controllerContext.RouteData.Values["language"].ToString(),
                     Controller = controllerContext.RouteData.Values["controller"].ToString(),
                     Action = controllerContext.RouteData.Values["action"].ToString(),
+                    Id=idRV
                 };
         }
+
     }
 }

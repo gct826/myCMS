@@ -129,8 +129,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Binders\RouteBinder.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\GameController.cs" />
-    <Compile Include="Controllers\LanguageController.cs" />
+    <Compile Include="Controllers\PageHeaderController.cs" />
+    <Compile Include="Controllers\TranslationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -219,6 +221,11 @@
     <Content Include="Views\Game\Details.cshtml" />
     <Content Include="Views\Game\Edit.cshtml" />
     <Content Include="Views\Game\Index.cshtml" />
+    <Content Include="Views\Home\Page.cshtml" />
+    <Content Include="Views\PageHeader\Create.cshtml" />
+    <Content Include="Views\PageHeader\Details.cshtml" />
+    <Content Include="Views\PageHeader\Edit.cshtml" />
+    <Content Include="Views\PageHeader\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

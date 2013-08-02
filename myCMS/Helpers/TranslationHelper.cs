@@ -20,5 +20,19 @@ namespace myCMS.Helpers
 
             return foundTranslation.Code;
         }
+
+        public bool ValidTranslation(string testCode)
+        {
+            _translations = new MongoHelper<Translation>();
+
+            var translationQuery = Query<Translation>.EQ(g => g.Code, testCode.ToLower());
+            var foundTranslation = _translations.Collection.FindOne(translationQuery);
+
+            if (foundTranslation != null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

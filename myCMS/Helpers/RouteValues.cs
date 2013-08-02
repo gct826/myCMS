@@ -5,5 +5,6 @@
         public string Language { get; set; }
         public string Controller { get; set; }
         public string Action { get; set; }
+        public string Id { get; set; }
     }
 }

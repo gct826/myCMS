@@ -125,7 +125,7 @@ namespace myCMS.Controllers
                 return RedirectToAction("Index");
 
             //}
-            return View(game);
+
         }
 
 

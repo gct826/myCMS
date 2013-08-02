@@ -1,0 +1,33 @@
+﻿@model myCMS.Models.PageHeader
+
+<h2>@ViewBag.Title</h2>
+
+<fieldset>
+    <legend>CMSPage</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Permalink)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Permalink)
+    </div>
+    
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+    
+</fieldset>
+<p>
+@*    @Html.ActionLink("Edit", "Edit", new { id=Model.CMSPageId }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>

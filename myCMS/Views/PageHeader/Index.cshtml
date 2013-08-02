@@ -1,0 +1,49 @@
+﻿@model IEnumerable<myCMS.Models.PageHeader>
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Permalink)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        @*        <th></th>*@
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Permalink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { name = item.Name }) |
+                @Html.ActionLink("Details", "Details", new { name = item.Name }) |
+                @*            @Html.ActionLink("Delete", "Delete", new { id=item.CMSPageId })*@
+            </td>
+        </tr>
+    }
+
+</table>
+
+<br/>
+
+<ul><p>debug only</p></ul>
+<p>Language = @ViewBag.langRV</p>
+<p>Controller = @ViewBag.contRV</p>
+<p>Action = @ViewBag.actiRV</p>
+<p>Id = @ViewBag.idRV</p>

@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using myCMS.Controllers;
 using myCMS.Helpers;
 using myCMS.Models;
-using myCMS.Tests.Helper;
+
 
 namespace myCMS.Tests.Controllers
 {
@@ -36,6 +36,22 @@ namespace myCMS.Tests.Controllers
 
             // Assert
             Assert.AreEqual("en", result.ViewBag.langRV);
+        }
+
+        [TestMethod]
+        public void ValidTranslation()
+        {
+            //Arrange
+            var controller = new HomeController(new RouteService());
+            var helper = new TranslationHelper();
+            
+            var testCode = "en";
+
+            //Act
+            var result = helper.ValidTranslation(testCode);
+
+            //Assert
+            Assert.IsTrue(result);
         }
     }
 }

@@ -10,6 +10,18 @@ namespace myCMS.Controllers
         public BaseController(IRouteService routeService)
         {
             _routeService = routeService;
+
+            //RouteValues routeValues = RouteValue;
+
+            //if (routeValues.Language == "error")
+            //{
+            //    RedirectToAction("index", "error");
+            //}
+
+            //ViewBag.langRV = routeValues.Language;
+            //ViewBag.contRV = routeValues.Controller;
+            //ViewBag.actiRV = routeValues.Action;
+
         }
 
         protected RouteValues RouteValue

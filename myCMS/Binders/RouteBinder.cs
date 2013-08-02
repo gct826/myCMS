@@ -12,6 +12,7 @@ namespace myCMS.Binders
                            Language = controllerContext.RouteData.Values["language"].ToString(),
                            Controller = controllerContext.RouteData.Values["controller"].ToString(),
                            Action = controllerContext.RouteData.Values["action"].ToString(),
+                           Id = controllerContext.RouteData.Values["id"].ToString(),
                        };
         }
     }
