@@ -75,11 +75,11 @@ namespace myCMS
                 constraints: new {language = new LanguageConstraint(), permalink = new CmsUrlConstraint()}
                 );
 
-            routes.MapRoute(
-                name: "Admin",
-                url: "Admin/{controller}/{action}/{id}",
-                defaults: new { language = "en", controller = "Admin", action = "Index", id = UrlParameter.Optional }
-                );
+            //routes.MapRoute(
+            //    name: "Admin",
+            //    url: "Admin/{controller}/{action}/{id}",
+            //    defaults: new { language = "en", controller = "Admin", action = "Index", id = UrlParameter.Optional }
+            //    );
 
             routes.MapRoute(
                 name: "Default",

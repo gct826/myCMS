@@ -34,3 +34,5 @@ C:\Users\George\Documents\GitHub\myCMS\myCMS\obj\Debug\myCMS.pdb
 C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\Ninject.dll
 C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\Ninject.pdb
 C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\Ninject.xml
+C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\MongoDB.Web.dll
+C:\Users\George\Documents\GitHub\myCMS\myCMS\bin\MongoDB.Web.pdb
